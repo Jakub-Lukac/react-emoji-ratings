@@ -16,6 +16,7 @@ import Badge from '@material-ui/core/Badge/Badge';
 import { Placeholder } from "@pnp/spfx-controls-react/lib/Placeholder";
 
 import { Dialog, DialogFooter, DialogType } from 'office-ui-fabric-react';
+import { IRatingNewItem } from './models/IRatingNewItem';
 
 interface IUserReaction {
   user: string;
@@ -142,11 +143,15 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
      console.log("body object is: ", body); */
 
     let pageName = window.location.href;
-    let body: any = {
+    let pageId = this._currentContext.pageContext.listItem?.uniqueId; // returns string, or return listItem?.id
+    console.log("Page context", this._currentContext.pageContext);
+    console.log("Page ID", pageId);
+    console.log(typeof pageId);
+    let body: IRatingNewItem = {
       Title: this._currentContext.pageContext.user.displayName,
-      Pagename: pageName ? pageName : window.location.href,
+      PageID: pageId.toString(),
+      Pagename: pageName,
       User: this._currentContext?.pageContext.user.loginName,
-      Comments: this.props.enableComments ? ratingCommnets : "",
       Rating1: "",
       Rating2: "",
       Rating3: "",
@@ -226,8 +231,10 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
       }
     }
 
+    let pageId = this._currentContext.pageContext.listItem?.uniqueId;
+    console.log("Current Page ID: ", pageId);
     let pageRatings = await ratingItems.filter((element) => {
-      return (element["Pagename"] == window.location.href
+      return (element["PageID"] == pageId
       );
     });
 
@@ -261,7 +268,7 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
 
     let userLogin = this._currentContext.pageContext.user.loginName;
     let userSelectedRating = await ratingItems.filter((element) => {
-      return (element["Pagename"] == window.location.href
+      return (element["PageID"] == pageId
         && (element["User"] == userLogin));
     });
 
@@ -338,8 +345,9 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
     const allRatings = this.state.ratingItems;
     console.log("allRatings: ", allRatings);
 
+    let pageId = this._currentContext.pageContext.listItem?.uniqueId;
     let pageRatings = allRatings.filter((element) => {
-      return (element["Pagename"] == window.location.href
+      return (element["PageID"] == pageId
       );
     });
 

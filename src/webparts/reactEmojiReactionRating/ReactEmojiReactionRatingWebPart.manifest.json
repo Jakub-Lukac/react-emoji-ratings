@@ -6,9 +6,7 @@
   "version": "*",
   "manifestVersion": 2,
   "requiresCustomScript": false,
-  "supportedHosts": [
-    "SharePointWebPart"
-  ],
+  "supportedHosts": ["SharePointWebPart"],
   "preconfiguredEntries": [
     {
       "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
@@ -27,23 +25,23 @@
         "propertyEmojisCollection": [
           {
             "Title": "",
-            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg10.png"
+            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg10.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg2.png"
+            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg2.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg3.png"
+            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg3.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg4.png"
+            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg4.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg5.png"
+            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg5.png"
           }
         ],
         "propertyEnableComments": false,
@@ -55,16 +53,16 @@
         "propertyColListColumns": [
           "Pagename",
           "User",
+          "PageID",
           "Rating1",
           "Rating2",
           "Rating3",
           "Rating4",
-          "Rating5",
-          "Comments"
+          "Rating5"
         ],
         "propertyListOperationMessage": "",
         "propertyLibraryInitialized": false,
-        "propertyCentralSiteUrl": "https://3sljsv.sharepoint.com/sites/feedback"
+        "propertyCentralSiteUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service"
       }
     }
   ]

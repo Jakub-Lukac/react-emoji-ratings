@@ -4,9 +4,10 @@
 export interface IRatingNewItem {
     Id?: number;
     Title: string;
+    PageID: string; // GUID of the page
     Pagename: string;
     User: string;
-    Comment: string;
+    //Comments: string;
     Rating1?: string;
     Rating2?: string;
     Rating3?: string;
