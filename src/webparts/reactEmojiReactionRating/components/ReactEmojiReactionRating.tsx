@@ -17,6 +17,7 @@ import { Placeholder } from "@pnp/spfx-controls-react/lib/Placeholder";
 
 import { Dialog, DialogFooter, DialogType } from 'office-ui-fabric-react';
 import { IRatingNewItem } from './models/IRatingNewItem';
+import * as e from 'express';
 
 interface IUserReaction {
   user: string;
@@ -408,9 +409,14 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
     this.props.context.propertyPane.open();
   }
 
-  private closeDialog(e: any) {
-    this.setState({ isDialogHidden: true });
-    window.location.reload();
+  private async closeDialog(e: any) {
+    if (e && e.preventDefault) e.preventDefault();
+    this.setState({ isDialogHidden: true }, () => {
+      if (this.webPartRef.current) {
+        this.webPartRef.current.focus({ preventScroll: true });
+      }
+    });
+    //setTimeout(() => this.getItems(), 300);
   }
 
   private ShowDialogMessage(title: string, body: string) {
@@ -419,7 +425,6 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
       isDialogHidden: false,
       dialogTitle: title,
       dialogBody: body,
-
     });
   }
 
@@ -566,6 +571,7 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
                 <PrimaryButton type='button' onClick={this.closeDialog} text="OK" />
               </DialogFooter>
             </Dialog>
+
 
             <Dialog
               hidden={!this.state.showUsersModal}

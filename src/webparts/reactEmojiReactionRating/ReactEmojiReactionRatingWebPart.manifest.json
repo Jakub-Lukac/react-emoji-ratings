@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "0dbbad17-3a6b-44ed-8ebb-989a8dd906b5",
+  "id": "bbcf5a6f-d4a4-4427-9de0-aa7b7b4e0921",
   "alias": "ReactEmojiReactionRatingWebPart",
   "componentType": "WebPart",
   "version": "*",
@@ -14,10 +14,10 @@
         "default": "Other"
       },
       "title": {
-        "default": "react-emoji-reaction-rating"
+        "default": "react-emoji-rating-svk"
       },
       "description": {
-        "default": "react-emoji-reaction-rating description"
+        "default": "react-emoji-rating-svk description"
       },
       "officeFabricIconFontName": "Page",
       "properties": {
@@ -25,23 +25,23 @@
         "propertyEmojisCollection": [
           {
             "Title": "",
-            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg10.png"
+            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg1.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg2.png"
+            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg2.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg3.png"
+            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg3.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg4.png"
+            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg4.png"
           },
           {
             "Title": "",
-            "ImageUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service/Emojis%20Collection/RatingImg5.png"
+            "ImageUrl": "https://3sljsv.sharepoint.com/sites/feedback/Emojis%20Collection/RatingImg5.png"
           }
         ],
         "propertyEnableComments": false,
@@ -62,7 +62,7 @@
         ],
         "propertyListOperationMessage": "",
         "propertyLibraryInitialized": false,
-        "propertyCentralSiteUrl": "https://drmaxglobal.sharepoint.com/sites/SVK_Intranet_service"
+        "propertyCentralSiteUrl": "https://3sljsv.sharepoint.com/sites/feedback"
       }
     }
   ]
