@@ -3,7 +3,7 @@
   "solution": {
     "name": "react-emoji-rating-svk",
     "id": "decc9e13-97be-4b3d-9914-69716cd833a6",
-    "version": "3.4.1.1",
+    "version": "3.5.1.1",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

@@ -89,9 +89,9 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
       }
     }
 
-    if (previousProps.listMessage !== this.props.listMessage) {
+    /*if (previousProps.listMessage !== this.props.listMessage) {
       this.ShowDialogMessage("Vytvorenie zoznamu", this.props.listMessage);
-    }
+    }*/
   }
 
 
@@ -397,6 +397,7 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
         this.webPartRef.current.focus({ preventScroll: true });
       }
     });
+    console.log("Users modal closed");
   }
 
   private handleChange(event: any, newValue: string) {
@@ -416,6 +417,7 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
         this.webPartRef.current.focus({ preventScroll: true });
       }
     });
+    console.log("Dialog closed");
     //setTimeout(() => this.getItems(), 300);
   }
 
