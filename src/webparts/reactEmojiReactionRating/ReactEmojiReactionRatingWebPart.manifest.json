@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "bbcf5a6f-d4a4-4427-9de0-aa7b7b4e0921",
+  "id": "0dbbad17-3a6b-44ed-8ebb-989a8dd906b5",
   "alias": "ReactEmojiReactionRatingWebPart",
   "componentType": "WebPart",
   "version": "*",
