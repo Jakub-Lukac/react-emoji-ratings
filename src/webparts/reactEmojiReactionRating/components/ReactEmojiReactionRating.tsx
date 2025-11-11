@@ -418,7 +418,8 @@ export default class ReactEmojiReactionRating extends React.Component<IReactEmoj
       }
     });
     console.log("Dialog closed");
-    //setTimeout(() => this.getItems(), 300);
+    console.log("Refreshing items after dialog close");
+    setTimeout(() => this.getItems(), 300);
   }
 
   private ShowDialogMessage(title: string, body: string) {
