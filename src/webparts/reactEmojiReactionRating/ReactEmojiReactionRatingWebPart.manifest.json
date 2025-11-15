@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "0dbbad17-3a6b-44ed-8ebb-989a8dd906b5",
-  "alias": "ReactEmojiReactionRatingWebPart",
+  "id": "60d19e88-a1bf-477d-9ef2-0f6227c1cfd6",
+  "alias": "ReactEmojiRating-SVK-V2",
   "componentType": "WebPart",
   "version": "*",
   "manifestVersion": 2,
@@ -14,10 +14,10 @@
         "default": "Other"
       },
       "title": {
-        "default": "react-emoji-rating-svk"
+        "default": "react-emoji-rating-svk-v2"
       },
       "description": {
-        "default": "react-emoji-rating-svk description"
+        "default": "react-emoji-rating-svk-v2 description"
       },
       "officeFabricIconFontName": "Page",
       "properties": {

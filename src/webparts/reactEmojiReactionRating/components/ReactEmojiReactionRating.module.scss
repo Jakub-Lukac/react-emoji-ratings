@@ -34,15 +34,21 @@
     @include ms-fontColor-gray200; */
   }
 
-  .selectedEmoji {
-   /* background-color: #96d5de !important; */
-    border-radius: 14px !important;
-    cursor: pointer !important;
-    width: 100%;
-    max-width: 40px;
-    height: auto;
-    object-fit: contain;
-  }
+.selectedEmoji {
+  border-radius: 16px !important;
+  cursor: pointer !important;
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  object-fit: contain;
+
+  /* Add space around the emoji to enlarge background highlight */
+  padding: 6px; 
+  background-color: #96d5de !important;
+
+  box-sizing: content-box; /* ensures padding expands the background area */
+  transition: background-color 0.2s ease-in-out;
+}
 
   .emojiWrapper {
   display: flex;
@@ -99,14 +105,17 @@
     color: grey !important;
   }
 
-  .stackImage {
-    cursor: 'pointer' !important;
-    border-radius: 10px !important;
-    width: 100%;
-    max-width: 40px;
-    height: auto;
-    object-fit: contain;
-  }
+.stackImage {
+  cursor: pointer !important;
+  border-radius: 10px !important;
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  object-fit: contain;
+  background-color: transparent;
+  padding: 0;
+  box-sizing: content-box;
+}
 
   .labelClass {
     text-align: center !important;
