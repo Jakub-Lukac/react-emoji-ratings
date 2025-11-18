@@ -13,7 +13,7 @@
     "no-eval": false,
     "no-function-expression": true,
     "no-internal-module": true,
-    "no-shadowed-variable": true,
+    "no-shadowed-variable": false,
     "no-switch-case-fall-through": true,
     "no-unnecessary-semicolons": true,
     "no-unused-expression": true,

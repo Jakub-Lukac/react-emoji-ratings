@@ -1,6 +1,6 @@
 {
-  "name": "react-emoji-reaction-rating",
-  "version": "0.0.1",
+  "name": "react-emoji-rating-svk-v2",
+  "version": "0.0.2",
   "private": true,
   "main": "lib/index.js",
   "scripts": {

@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.12.1",
-    "libraryName": "react-emoji-reaction-rating",
-    "libraryId": "fe292bb9-a5c2-40b4-b90b-61e8510c3c09",
+    "libraryName": "react-emoji-rating-svk-v2",
+    "libraryId": "5072ad87-685d-4c10-b5f0-f6eb886cb88c",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
