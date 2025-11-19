@@ -14,10 +14,10 @@
         "default": "Other"
       },
       "title": {
-        "default": "react-emoji-rating-svk-v2"
+        "default": "React Emoji Rating SVK V2"
       },
       "description": {
-        "default": "react-emoji-rating-svk-v2 description"
+        "default": "React Emoji Rating SVK V2 description"
       },
       "officeFabricIconFontName": "Page",
       "properties": {
